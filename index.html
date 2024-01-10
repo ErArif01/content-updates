@@ -5,7 +5,25 @@
     <meta name="viewport" content="width=devices-width, initial-scale=1.0">
     <title> Content Page - Home </title>
     <link rel="stylesheet" href="styles.css">
-    
+    <!-- Add these lines in the head section of index.html -->
+<script src="https://www.gstatic.com/firebasejs/8.4.3/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.4.3/firebase-database.js"></script>
+<script>
+    // Paste the Firebase configuration object here
+    var firebaseConfig = {
+        apiKey: "your-api-key",
+        authDomain: "your-auth-domain",
+        databaseURL: "your-database-url",
+        projectId: "your-project-id",
+        storageBucket: "your-storage-bucket",
+        messagingSenderId: "your-messaging-sender-id",
+        appId: "your-app-id"
+    };
+
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+</script>
+
   </head>
   <body>
   <header>
